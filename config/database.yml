@@ -8,11 +8,11 @@ default: &default
 
 development:
   <<: *default
-  database: アプリケーション名_development  #アプリケーション名はご自身のものに変更してください
+  database: highlight_development  #アプリケーション名はご自身のものに変更してください
 
 test:
   <<: *default
-  database: アプリケーション名_test  #アプリケーション名はご自身のものに変更してください
+  database: highlight_test  #アプリケーション名はご自身のものに変更してください
 
 production:
   <<: *default
