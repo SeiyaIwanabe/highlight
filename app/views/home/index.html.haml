@@ -4,8 +4,11 @@
       %p ツイッターのfontawesome
       %p Googleのfontawesome
     .Header--left
-      = link_to "新規登録", "#", class: "Registration"
-      = link_to "ログイン", "#", class: "Login"
+      - if user_signed_in?
+        = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "Logout"
+      - else
+        = link_to "新規登録", new_user_registration_path, class: "Registration"
+        = link_to "ログイン", new_user_session_path, class: "Login"
   
   .Main
     %h1.title HighLight
@@ -23,12 +26,3 @@
         = link_to "TRUST", "#"
       %li
         = link_to "HOPE", "#"
-      
-
-  -# %ul
-  -#   %li
-  -#     %img(src="assets/dream.jpg" alt="テスト")/
-  -#   %li
-  -#     %img(src="assets/love.jpg" alt="テスト")/
-  -#   %li
-  -#     %img(src="assets/hobby.jpg" alt="テスト")/
