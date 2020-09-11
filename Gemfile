@@ -69,3 +69,6 @@ gem "font-awesome-sass"
 gem 'jquery-rails'
 
 gem 'devise'
+
+gem "refile", require: "refile/rails", github: 'manfe/refile'
+gem "refile-mini_magick"
