@@ -1,6 +1,6 @@
 jQuery(function($) {
   $('.bgimg-switcher').bgSwitcher({
-    images: ['assets/test.png','assets/test2.png','assets/test3.png'], //切り替え画像
+    images: ['images/test.png','images/test2.png','images/test3.png'], //切り替え画像
     interval: 4000, // 切り替えの間隔 1000 = 1秒
     start: true, // $.fn.bgsswitcher(config)をコールしたときに切り替えを開始する
     loop: true, //切り替えをループする
