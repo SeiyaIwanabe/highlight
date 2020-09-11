@@ -1,7 +1,7 @@
 .Header
   .Header--right
-    %p ツイッターのfontawesome
-    %p Googleのfontawesome
+    = icon("fab fa-twitter", class: "twitter")
+    = icon("fab fa-google", class: "google")
   .Header--left
     - if user_signed_in?
       = link_to "マイページ", user_path(current_user), class: "Mypage"
