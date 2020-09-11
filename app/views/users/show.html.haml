@@ -9,24 +9,7 @@
             = image_tag @user.image.url, class: "UserImage__icon"
           - else
             = image_tag asset_path("no-image.png")
-            -# = icon("far fa-image", class: 'UserImage__defalt')
           = @user.username
           = link_to "プロフィール編集", edit_user_path(current_user)
-
-
--# .UserDetails__field--image 
--#           .UserImage
--#             - if @user.image?
--#               = image_tag @user.image.url, class: "UserImage__icon "
--#             - else
--#               = icon('far', 'smile-wink', class: 'UserImage__default')
-
--#           .UserEdit
--#             -if user_signed_in? && current_user.id.to_s == params[:id]
--#               = link_to edit_user_path(current_user), method: :get do
--#                 = @nickname
--#             - else 
--#               = @nickname
-
 
   
