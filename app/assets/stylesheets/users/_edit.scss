@@ -1,4 +1,4 @@
-.RegistrationsBox {
+.EditBox {
   width: 100vw;
   height: 100vh;
   background-image: image-url("test4.jpeg");
@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
 
-    .InputBox {
+    .FormBox {
       width: 50%;
       height: 70%;
       text-align: center;
@@ -21,7 +21,7 @@
       border: 1px solid white;
 
       .info {
-    
+
         .title {
           color: white;
           font-size: 3rem;
@@ -32,28 +32,6 @@
 
       .form {
         
-        .field {
-          margin-bottom: 2rem;
-          
-          .label {
-            font-size: 1.2rem;
-  
-            .control.has-icons-left {
-  
-              .input {
-                width: 80%;
-              }
-            }
-          }
-        }
-        .Signup {
-          width: 27%;
-          height: 30%;
-          opacity: 0.7;
-          border: 2px solid black;
-          font-weight: bold;
-          margin-top: 2rem;
-        }
       }
     }
   }

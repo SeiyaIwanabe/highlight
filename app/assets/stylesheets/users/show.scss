@@ -1,0 +1,23 @@
+.ShowBox {
+  width: 100vw;
+  height: 100vh;
+  background-image: image-url("test4.jpeg");
+  background-size: cover;
+
+  &--image {
+    height: 100%;
+    background: rgba(255,255,255,0.3);
+
+    .ProfileArea {
+      .ProfileArea {
+        &--top {
+          &__image {
+            .attachment user profile_image Image fallback {
+              width: 20%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

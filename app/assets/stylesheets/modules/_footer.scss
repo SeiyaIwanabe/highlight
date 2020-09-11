@@ -1,0 +1,19 @@
+.Footer {
+  height: 20%;
+
+  ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    // justify-content: space-around;
+
+    li {
+      border-left: 1px solid black;
+      width: 20%;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.5rem;
+      
+    }
+  }
+}
