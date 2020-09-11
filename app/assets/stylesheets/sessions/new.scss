@@ -1,0 +1,56 @@
+.LoginBox {
+  width: 100vw;
+  height: 100vh;
+  background-color: blue;
+  background-image: url("test4.jpeg");
+  background-size: cover;
+
+  &--image {
+    height: 100%;
+    background: rgba(255,255,255,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .InputBox {
+      width: 50%;
+      height: 70%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: 1px solid white;
+
+      .Info {
+
+        .title {
+          color: white;
+          font-size: 3rem;
+          font-weight: bold;
+          margin-bottom: 3rem;
+        }
+      }
+
+      .form {
+
+        .field {
+          margin-bottom: 2rem;
+
+          .label {
+            font-size: 1.2rem;
+
+          }
+        }
+      }
+
+      .LoginBtn {
+        width: 20%;
+          height: 30%;
+          opacity: 0.7;
+          border: 2px solid black;
+          font-weight: bold;
+          margin-top: 2rem;
+      }
+    }
+  }
+}
