@@ -1,0 +1,38 @@
+.EditBox {
+  width: 100vw;
+  height: 100vh;
+  background-image: image-url("test4.jpeg");
+  background-size: cover;
+
+  &--image {
+    height: 100%;
+    background: rgba(255,255,255,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .FormBox {
+      width: 50%;
+      height: 70%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: 1px solid white;
+
+      .info {
+
+        .title {
+          color: white;
+          font-size: 3rem;
+          font-weight: bold;
+          margin-bottom: 3rem;
+        }
+      }
+
+      .form {
+        
+      }
+    }
+  }
+}
