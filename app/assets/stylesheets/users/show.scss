@@ -12,7 +12,9 @@
       .ProfileArea {
         &--top {
           &__image {
-            
+            .attachment user profile_image Image fallback {
+              width: 20%;
+            }
           }
         }
       }
