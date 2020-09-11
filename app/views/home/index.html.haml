@@ -1,14 +1,5 @@
 .bgimg-switcher#slide
-  .Header
-    .Header--right
-      %p ツイッターのfontawesome
-      %p Googleのfontawesome
-    .Header--left
-      - if user_signed_in?
-        = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "Logout"
-      - else
-        = link_to "新規登録", new_user_registration_path, class: "Registration"
-        = link_to "ログイン", new_user_session_path, class: "Login"
+  = render "modules/header"
   
   .Main
     %h1.title HighLight

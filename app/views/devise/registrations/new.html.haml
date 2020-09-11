@@ -11,7 +11,7 @@
             .field
               = f.label :username, class: "label"
               %p.control.has-icons-left
-                = f.text_field :username, autofocus: true, autocomplete: "username", :placeholder => "username", class: "input"
+                = f.text_field :username, autofocus: true, autocomplete: "username", :placeholder => "username", maxlength: "10", class: "input"
                 %span.icon.is-small.is-left
                   %i.fas.fa-user
             .field
