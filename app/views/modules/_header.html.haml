@@ -1,7 +1,8 @@
 .Header
   .Header--right
-    = icon("fab fa-twitter", class: "twitter")
-    = icon("fab fa-google", class: "google")
+    = link_to "HOME", root_path, class: "Homebtn"
+    -# = icon("fab fa-twitter", class: "twitter")
+    -# = icon("fab fa-google", class: "google")
   .Header--left
     - if user_signed_in?
       = link_to "マイページ", user_path(current_user), class: "Mypage"
