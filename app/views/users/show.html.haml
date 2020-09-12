@@ -1,15 +1,15 @@
-.ShowBox
-  .ShowBox--image
-    = render "modules/header"
+.ProfileArea
+  .ProfileArea--top
+    .ProfileArea--top__image
+      - if @user.image?
+        = image_tag @user.image.url, class: "UserImage__icon"
+      - else
+        = image_tag asset_path("no-image.png")
+      = @user.username
+      = @user.introduction
+      = link_to "プロフィール編集", edit_user_path(current_user)
+-# .ShowBox
+-#   .ShowBox--image
 
-    .ProfileArea
-      .ProfileArea--top
-        .ProfileArea--top__image
-          - if @user.image?
-            = image_tag @user.image.url, class: "UserImage__icon"
-          - else
-            = image_tag asset_path("no-image.png")
-          = @user.username
-          = link_to "プロフィール編集", edit_user_path(current_user)
 
   

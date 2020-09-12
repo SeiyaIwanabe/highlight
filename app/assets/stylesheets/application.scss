@@ -9,6 +9,14 @@
 @import "users/show";
 @import "users/edit";
 
-.notification:not(:last-child) {
-  margin-bottom: 0;
+* {
+  box-sizing: border-box;
+}
+
+.MainWrapper {
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+  background-image: image-url("IMG_1300.JPG");
+  background-size: cover;
 }
