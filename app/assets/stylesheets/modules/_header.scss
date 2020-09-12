@@ -1,6 +1,6 @@
 .Header {
   height: 15%;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,6 +8,15 @@
   &--right {
     width: 20%;
     padding-left: 4rem;
+    
+
+    .twitter {
+      color: white;
+      background-color: white;
+    }
+    .google {
+      margin-left: 2rem;
+    }
   }
   &--left {
     width: 20%;
@@ -17,27 +26,31 @@
     justify-content: space-between;
 
     .Logout {
+      color: white;
       font-size: 1.2rem;
-      border: 1px solid black;
+      border: 1px solid white;
       padding: 1rem;
       text-decoration: none;
     }
     .Mypage {
+      color: white;
       font-size: 1.2rem;
-      border: 1px solid black;
+      border: 1px solid white;
       padding: 1rem;
       text-decoration: none;
     }
     
     .Registration {
+      color: white;
       font-size: 1.4rem;
-      border: 1px solid black;
+      border: 1px solid white;
       padding: 1rem;
       text-decoration: none;
     }
     .Login {
+      color: white;
       font-size: 1.2rem;
-      border: 1px solid black;
+      border: 1px solid white;
       padding: 1rem;
       text-decoration: none;
     }
