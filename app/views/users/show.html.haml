@@ -1,13 +1,16 @@
 .ProfileArea
   .ProfileArea--top
-    .ProfileArea--top__image
-      - if @user.image?
-        = image_tag @user.image.url, class: "UserImage__icon"
-      - else
-        = image_tag asset_path("no-image.png")
+    - if @user.image?
+      = image_tag @user.image.url, class: "UserImage__icon"
       = @user.username
       = @user.introduction
       = link_to "プロフィール編集", edit_user_path(current_user)
+    - else
+      = image_tag asset_path("no-image.png")
+      = @user.introduction
+      = link_to "プロフィール編集", edit_user_path(current_user)
+  .GroupList
+    
 -# .ShowBox
 -#   .ShowBox--image
 
