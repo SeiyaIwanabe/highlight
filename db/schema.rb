@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_13_112618) do
+ActiveRecord::Schema.define(version: 2020_09_13_113359) do
 
   create_table "group_users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "group_id"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2020_09_13_112618) do
     t.string "groupname", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "image"
     t.index ["groupname"], name: "index_groups_on_groupname", unique: true
   end
 

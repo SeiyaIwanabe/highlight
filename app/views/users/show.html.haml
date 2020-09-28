@@ -7,12 +7,9 @@
       = link_to "プロフィール編集", edit_user_path(current_user)
     - else
       = image_tag asset_path("no-image.png")
+      = @user.username
       = @user.introduction
       = link_to "プロフィール編集", edit_user_path(current_user)
   .GroupList
-    
--# .ShowBox
--#   .ShowBox--image
-
-
-  
+    = link_to "= @group.groupname", group_path(@group)
+    = link_to "新規グループ作成", new_group_path

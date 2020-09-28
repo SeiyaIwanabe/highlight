@@ -15,7 +15,7 @@
 
           - else
             = f.label :image, class: 'UserImage__default' do
-              = icon('fas', 'image')
+              = image_tag asset_path 'no-image.png', class: 'TouchHere'
               = f.file_field :image, class: 'Hidden'
         
         .UserNameEdit

@@ -1,0 +1,34 @@
+.SettingGroupForm
+  %h1 チャットグループ編集
+
+  = form_with(model: group, local: true, class: :GroupForm) do |f|
+
+  .SettingGroupForm__field
+
+    .GroupImage 
+      - if @group.image?
+        = f.label :image, class: 'GroupImage__icon' do
+          = image_tag @user.image.url, class: "GroupImage__icon "
+          -# = icon("fa", "image", class: "TouchHere")
+          = f.file_field :image, class: 'Hidden'
+
+      - else
+        = f.label :image, class: 'GroupImage__default' do
+          = image_tag asset_path 'no-image.png', class: 'TouchHere'
+          = f.file_field :image, class: 'Hidden'
+
+    .SettingGroupForm__leftField
+      = f.label :groupname, "グループ名", class: 'SettingGroupForm__label'
+    .SettingGroupForm__rightField
+      = f.text_field :name, class: 'SettingGroupForm__input', placeholder: 'グループ名を入力してください'
+  .SettingGroupForm__field
+    .SettingGroupForm__leftField
+      %label.SettingGroupForm__label チャットメンバーを追加
+    .SettingGroupForm__rightField
+      / グループ作成機能の追加時はここにcollection_check_boxesの記述を入れてください
+      = f.collection_check_boxes :user_ids, User.all, :id, :username
+      / この部分はインクリメンタルサーチ（ユーザー追加の非同期化のときに使用します
+  .SettingGroupForm__field
+    .SettingGroupForm__leftField
+    .SettingGroupForm__rightField
+      = f.submit class: 'SettingGroupForm__button'
